@@ -45,6 +45,7 @@ class EngineerDeveloper:
     def say_hi(self) -> str:
         print('Thanks for dropping by, hope you find some of my work interesting.')
         
+        
 me: EngineerDeveloper = EngineerDeveloper()
 me.say_hi()
 ```
