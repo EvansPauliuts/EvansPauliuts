@@ -16,7 +16,34 @@ Here are some ideas to get you started:
 -->
 
 ## Hey 👋, This is Evans Pauliuts
-## Some of my Github Stats
+<p align=left> <img src=https://komarev.com/ghpvc/?username=EvansPauliuts alt=EvansPauliuts /> </p>
+
+```python
+
+class EngineerDeveloper:
+
+    def __init__(self):
+        self.name = 'Evans Pauliuts'
+        self.role = "Enginner Developer"
+        self.code = {
+            'frontend': ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
+            'backend': ['Python', 'Flask', 'Django', 'FastApi'],
+            'database': ['PostgreSQL', 'MySQL', 'SQLite3', 'Mongo DB'],
+            'devops': ['Docker', 'Nginx', 'Jenkins', 'GitHub Actions', 'AWS', 'Heroku'],
+            'tools': ['GIT', 'GitHub', 'GitLab', 'Pandas', 'Jupyter notebook', 'SQLAlchemy', 'Redis'],
+            'editor': ['Pycharm', 'Vim']
+        }
+        self.architecture = ['SPA', 'MVC', 'Serverless', 'microservices']
+
+    def say_hi(self):
+        print("Thanks for dropping by, hope you find some of my work interesting.")
+
+
+me = EngineerDeveloper()
+me.say_hi()
+```
+
+<!-- ## Some of my Github Stats -->
 <p align=left> <img src=https://komarev.com/ghpvc/?username=EvansPauliuts alt=EvansPauliuts /> </p>
 
 [![Github stats](https://github-readme-stats.vercel.app/api?username=EvansPauliuts&show_icons=true&include_all_commits=true)](https://github.com/EvansPauliuts/github-readme-stats)
