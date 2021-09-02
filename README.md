@@ -19,27 +19,33 @@ Here are some ideas to get you started:
 <p align=left> <img src=https://komarev.com/ghpvc/?username=EvansPauliuts alt=EvansPauliuts /> </p>
 
 ```python
+from typing import List, Dict
+from dataclasses import dataclass, field
 
+
+def get_code() -> Dict[str, List[str]]:
+    languages: dict = {
+        'frontend': ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
+        'backend': ['Python', 'Flask', 'Django', 'FastApi'],
+        'database': ['PostgreSQL', 'MySQL', 'SQLite3', 'Mongo DB'],
+        'devops': ['Docker', 'Nginx', 'Jenkins', 'GitHub Actions', 'AWS', 'Heroku'],
+        'tools': ['GIT', 'GitHub', 'GitLab', 'Pandas', 'Jupyter notebook', 'SQLAlchemy', 'Redis'],
+        'editor': ['Pycharm', 'Vim'],
+        'architecture': ['SPA', 'MVC', 'Serverless', 'microservices']
+    }
+    return languages
+
+
+@dataclass
 class EngineerDeveloper:
+    name: str = 'Evans Pauliuts'
+    role: str = 'Engineer Developer'
+    code: Dict[str, List[str]] = field(default_factory=get_code)
 
-    def __init__(self):
-        self.name = 'Evans Pauliuts'
-        self.role = 'Engineer Developer'
-        self.code = {
-            'frontend': ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
-            'backend': ['Python', 'Flask', 'Django', 'FastApi'],
-            'database': ['PostgreSQL', 'MySQL', 'SQLite3', 'Mongo DB'],
-            'devops': ['Docker', 'Nginx', 'Jenkins', 'GitHub Actions', 'AWS', 'Heroku'],
-            'tools': ['GIT', 'GitHub', 'GitLab', 'Pandas', 'Jupyter notebook', 'SQLAlchemy', 'Redis'],
-            'editor': ['Pycharm', 'Vim']
-        }
-        self.architecture = ['SPA', 'MVC', 'Serverless', 'microservices']
-
-    def say_hi(self):
+    def say_hi(self) -> str:
         print('Thanks for dropping by, hope you find some of my work interesting.')
-
-
-me = EngineerDeveloper()
+        
+me: EngineerDeveloper = EngineerDeveloper()
 me.say_hi()
 ```
 
