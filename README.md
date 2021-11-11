@@ -14,7 +14,7 @@ def get_code() -> Dict[str, List[str]]:
         'devops': ['Docker', 'Nginx', 'Jenkins', 'GitHub Actions', 'AWS', 'Heroku'],
         'tools': ['GIT', 'GitHub', 'GitLab', 'Pandas', 'Jupyter notebook', 'SQLAlchemy', 'Redis'],
         'editor': ['Pycharm', 'Vim'],
-        'architecture': ['SPA', 'MVC', 'Serverless', 'microservices']
+        'architecture': ['SPA', 'MVC', 'Serverless', 'Microservices']
     }
     return languages
 
@@ -22,7 +22,7 @@ def get_code() -> Dict[str, List[str]]:
 @dataclass
 class EngineerDeveloper:
     name: str = 'Evans Pauliuts'
-    role: str = 'Engineer Developer'
+    role: str = 'Software Engineer'
     code: Dict[str, List[str]] = field(default_factory=get_code)
 
     def say_hi(self) -> str:
