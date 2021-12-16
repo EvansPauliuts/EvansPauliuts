@@ -9,7 +9,7 @@ from dataclasses import dataclass, field
 def get_code() -> Dict[str, List[str]]:
     languages: dict = {
         'frontend': ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
-        'backend': ['Python', 'Flask', 'Django', 'FastApi'],
+        'backend': ['Python', 'Flask', 'Django', 'Django REST framework', 'FastApi'],
         'database': ['PostgreSQL', 'MySQL', 'SQLite3', 'Mongo DB'],
         'devops': ['Docker', 'Nginx', 'Jenkins', 'GitHub Actions', 'AWS', 'Heroku'],
         'tools': ['GIT', 'GitHub', 'GitLab', 'Pandas', 'Jupyter notebook', 'SQLAlchemy', 'Redis'],
