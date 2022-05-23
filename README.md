@@ -21,16 +21,17 @@ def get_code() -> Dict[str, List[str]]:
 
 @dataclass
 class SoftwareEngineer:
-    name: str = 'Evans Pauliuts'
-    role: str = 'Software Engineer'
+    name: str
+    role: str
     code: Dict[str, List[str]] = field(default_factory=get_code)
 
+    @property
     def say_hi(self) -> str:
         print('Thanks for dropping by, hope you find some of my work interesting.')
         
         
-me: SoftwareEngineer = SoftwareEngineer()
-me.say_hi()
+me = SoftwareEngineer('Evans Pauliuts', 'Software Engineer')
+me.say_hi
 ```
 
 <!-- [![Github stats](https://github-readme-stats.vercel.app/api?username=EvansPauliuts&show_icons=true&include_all_commits=true)](https://github.com/EvansPauliuts/github-readme-stats) -->
