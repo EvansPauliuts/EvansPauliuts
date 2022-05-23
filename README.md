@@ -29,7 +29,7 @@ class SoftwareEngineer:
         print('Thanks for dropping by, hope you find some of my work interesting.')
         
         
-me: EngineerDeveloper = SoftwareEngineer()
+me: SoftwareEngineer = SoftwareEngineer()
 me.say_hi()
 ```
 
