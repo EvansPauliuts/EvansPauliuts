@@ -20,7 +20,7 @@ def get_code() -> Dict[str, List[str]]:
 
 
 @dataclass
-class EngineerDeveloper:
+class SoftwareEngineer:
     name: str = 'Evans Pauliuts'
     role: str = 'Software Engineer'
     code: Dict[str, List[str]] = field(default_factory=get_code)
@@ -29,7 +29,7 @@ class EngineerDeveloper:
         print('Thanks for dropping by, hope you find some of my work interesting.')
         
         
-me: EngineerDeveloper = EngineerDeveloper()
+me: EngineerDeveloper = SoftwareEngineer()
 me.say_hi()
 ```
 
